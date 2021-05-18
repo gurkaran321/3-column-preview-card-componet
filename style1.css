@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html{
+  font-family:'Lexend Deca';
+  font-size:10px;
+}
+.wrapper{
+  display:grid;
+  padding:10vh 10vw;
+}
+
+.flex{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:3rem;
+  
+  
+}
+
+.gridcol-1{
+background-color:hsl(31, 77%, 52%);
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+.color1{
+    color:hsl(31, 77%, 52%);
+}
+
+.color1:hover{
+    cursor: pointer;
+    color:whitesmoke;
+    background-color:hsl(31, 77%, 52%);
+}
+
+.gridcol-2{
+background-color: hsl(184, 100%, 22%) ;
+}
+.color2{
+    color: hsl(184, 100%, 22%) ;
+}
+
+.color2:hover{
+    cursor: pointer;
+    color:whitesmoke;
+    background-color: hsl(184, 100%, 22%) ;
+}
+.gridcol-3{
+background-color:hsl(179, 100%, 13%);
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+.color3{
+    color:hsl(179, 100%, 13%);
+}
+
+.color3:hover{
+    cursor: pointer;
+    color:whitesmoke;
+    background-color:hsl(179, 100%, 13%);
+}
+.wrapper h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;  
+   color: hsl(0, 0%, 95%);
+   font-size:2.5rem;
+  text-transform:uppercase;
+}
+
+.text{
+    font-size: 'Lexend-Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    padding:10px 25px;
+    border-radius: 25px;
+}
+
+@media (min-width:700px){
+  .wrapper{
+    grid-template-columns:1fr 1fr 1fr;
+    width:60%;
+    padding: 20vh 20vw;
+}
+  html{
+    font-size:15px;
+  }
+
+  .flex{
+    justify-content:space-around;
+  }
+  .gridcol-3{
+      border-bottom-left-radius:0;
+      border-top-right-radius: 10px;
+  }
+
+  .gridcol-1{
+    border-bottom-left-radius:10px;
+    border-top-right-radius: 0px;
+}
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
